@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>F:\Final Year Project\BookseekerPub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Bookseeker.dll">
+      <publishTime>03/31/2016 18:22:47</publishTime>
+    </File>
+    <File Include="bin/Bookseeker.pdb">
+      <publishTime>03/22/2016 13:27:16</publishTime>
+    </File>
+    <File Include="bin/Default.aspx.cs">
+      <publishTime>03/20/2016 13:16:16</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/22/2016 12:13:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/22/2016 12:13:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>03/20/2016 09:49:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>03/20/2016 09:49:27</publishTime>
+    </File>
+    <File Include="bin/TEST.aspx.cs">
+      <publishTime>03/22/2016 13:27:08</publishTime>
+    </File>
+    <File Include="BookseekerEntities.edmx.diagram">
+      <publishTime>03/23/2016 15:54:13</publishTime>
+    </File>
+    <File Include="data/keywords.js">
+      <publishTime>03/29/2016 15:07:03</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>03/31/2016 18:08:28</publishTime>
+    </File>
+    <File Include="images/wait.gif">
+      <publishTime>03/31/2016 15:51:53</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/22/2016 12:13:15</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/22/2016 14:43:53</publishTime>
+    </File>
+    <File Include="styles/styles.css">
+      <publishTime>03/31/2016 16:50:40</publishTime>
+    </File>
+    <File Include="TEST.aspx">
+      <publishTime>03/22/2016 13:24:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/31/2016 09:52:55</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookseekerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="ISBN" />
+    </Key>
+    <Property Name="ISBN" Type="Decimal" Precision="13" Scale="0" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Genre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Publication_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Author_Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Author_Firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Keywords" Relationship="Self.Book_Keyword_Link" FromRole="Books" ToRole="Keywords" />
+  </EntityType>
+  <EntityType Name="Keywords">
+    <Key>
+      <PropertyRef Name="KeywordID" />
+    </Key>
+    <Property Name="KeywordID" Type="Int32" Nullable="false" />
+    <Property Name="Keyword" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.Book_Keyword_Link" FromRole="Keywords" ToRole="Books" />
+  </EntityType>
+  <Association Name="Book_Keyword_Link">
+    <End Role="Books" Type="Self.Books" Multiplicity="*" />
+    <End Role="Keywords" Type="Self.Keywords" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="Bookseeker" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Books" EntityType="Self.Books" />
+    <EntitySet Name="Keywords" EntityType="Self.Keywords" />
+    <AssociationSet Name="Book_Keyword_Link" Association="Self.Book_Keyword_Link">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="Keywords" EntitySet="Keywords" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

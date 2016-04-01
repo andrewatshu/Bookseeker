@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BookseekerEntities-Web.config Connection String" description="BookseekerEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/BookseekerEntities.csdl|res://*/BookseekerEntities.ssdl|res://*/BookseekerEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=codd\awa2;initial catalog=b2039405;persist security info=True;user id=b2039405;password=5ONallthetouches;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="\\\\studenthome\.hallam\.shu\.ac\.uk\\STUDENTHOME2\\5\\b2039405\\MyWork\\Visual\ Studio\ 2013\\Projects\\Bookseeker\\Bookseeker\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookseekerEntities']/@connectionString" />
+  </parameter>
+  <parameter name="Bookseeker-Web.config Connection String" description="Bookseeker Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/BookseekerEntities.csdl|res://*/BookseekerEntities.ssdl|res://*/BookseekerEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=codd\awa2;initial catalog=b2039405;persist security info=True;user id=b2039405;password=5ONallthetouches;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="\\\\studenthome\.hallam\.shu\.ac\.uk\\STUDENTHOME2\\5\\b2039405\\MyWork\\Visual\ Studio\ 2013\\Projects\\Bookseeker\\Bookseeker\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Bookseeker']/@connectionString" />
+  </parameter>
+</parameters>

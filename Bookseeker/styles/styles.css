@@ -1,0 +1,189 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 960px;
+    margin: auto;
+    min-height: 500px;
+}
+
+.divHeader {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    float: left;
+    height: 100px;
+    background-color: #783AFF;
+}
+
+    .divHeader h1 {
+        float: left;
+        font-weight: bold;
+        font-size: 36pt;
+        color: #FFE7BC;
+        margin: 0;
+    }
+
+    #divLogin, #divLoggedIn {
+        float: right;
+    }
+
+    #divLogin a, #divLoggedIn p {
+        color: #FFE7BC;
+        font-size: 18pt;
+        text-decoration: none;
+    }
+
+#divReqs {
+    position: relative;
+    float: left;
+    border: 7px solid #783AFF;
+    border-top: none;
+    padding: 0px 13px 15px 13px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    #divReqs h1 {
+        margin-bottom: auto;
+        color: #783AFF;
+        font-weight: normal;
+    }
+
+    #divReqs h2 {
+        color: #783AFF;
+        font-weight: normal;
+    }
+
+    #divReqs select {
+        width: 150px;
+        padding: 3px;
+        margin-left: 10px;
+    }
+
+    #divReqs input[type="text"] {
+        width: 150px;
+        padding: 3px;
+        margin-left: 10px;
+    }
+
+    #divReqs input[type="checkbox"] {
+
+    }
+
+    #divReqsLeft {
+        float: left;
+        width: 50%;
+        height: 170px;
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    #divReqsRight {
+        float: right;
+        position: relative;
+        width: 50%;
+        height: 170px;
+    }
+
+        #divReqsRight input[type="submit"] {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: none;
+            background-color: #783AFF;
+            font-size: 18pt;
+            font-weight: bold;
+            padding: 5px;
+            color: #FFE7BC;
+        }
+
+        #divValidationMsg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+        }
+
+.divResults {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .divResults h1 {
+        color: #783AFF;
+        font-weight: normal;
+    }
+
+.divResult {
+    float: left;
+    border: 3px solid #783AFF;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+    .divResultTopBar {
+        height: 35px;
+        padding: 3px 10px;
+        background-color: #783AFF;
+    }
+
+    .divResultTopBar h2 {
+        color: #FFE7BC;
+        margin: 0;
+    }
+    
+        .divResultBody img {
+            box-sizing: border-box;
+            width: 15%;
+            max-height: 200px;
+            padding: 10px;
+            float: left;
+        }
+
+        .divResultBody  p {
+            box-sizing: border-box;
+            padding: 0px 10px;
+            width: 55%;
+            float: left;
+            min-height: 150px;
+        }
+
+        .divResultBodyRight {
+            box-sizing: border-box;
+            padding-right: 10px;
+            float: right;
+        }
+        
+        .divResultBodyRight h2, .divResultBodyRight h3 {
+            color: #783AFF;
+            text-align: center;
+        }
+
+        .divResultBodyRight input[type="submit"] {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            border: none;
+            background-color: #783AFF;
+            font-size: 18pt;
+            font-weight: bold;
+            padding: 5px;
+            color: #FFE7BC;
+        }
+
+#divLoading
+{
+    height: 70px;
+    width: 150px;
+    border: 3px solid #783AFF;
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookseekerModelStoreContainer" CdmEntityContainer="Bookseeker">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="BookseekerModel.Books">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="Publication_Date" ColumnName="Publication Date" />
+          <ScalarProperty Name="Author_Surname" ColumnName="Author Surname" />
+          <ScalarProperty Name="Author_Firstname" ColumnName="Author Firstname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Keywords">
+      <EntityTypeMapping TypeName="BookseekerModel.Keywords">
+        <MappingFragment StoreEntitySet="Keywords">
+          <ScalarProperty Name="KeywordID" ColumnName="KeywordID" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Book_Keyword_Link" TypeName="BookseekerModel.Book_Keyword_Link" StoreEntitySet="Book_Keyword Link">
+      <EndProperty Name="Books">
+        <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+      </EndProperty>
+      <EndProperty Name="Keywords">
+        <ScalarProperty Name="KeywordID" ColumnName="KeywordID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
